@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177287861-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177287861-1');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexican Restaurant!!!!!!</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="top-section">
+            <header>
+
+                <a href="index.html"><img src="images/coco-logo.png" alt="coco-logo"> </a>
+                <div class="nav-desktop">
+
+                    <a href="about.html"> About</a>
+                    <a href="menu.html"> Menu</a>
+                    <a href="location.html"> Location</a>
+                    <a href="reservation.html">Reservation</a>
+
+                </div>
+
+                <a href="#menu" class="hamburger">
+                    <span class="hamburger-icon">&#9776;</span>
+                    <span class="hamburger-text">Menu</span>
+                </a>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="about.html"> About Us</a></li>
+                    <li><a href="menu.html"> Menu</a></li>
+                    <li><a href="location.html"> Location</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bannerSection">
+
+            <img class="foods" src="images/inside.jpg">
+            <!-- Use different picture -->
+
+
+        </div>
+        <!--end top section-->
+
+        <main>
+            <div class="reserve">
+                <h2>Reservation</h2>
+                <p>Thank you for visiting our website!</p>
+                <p>Please fill out the reservation form below.</p>
+                <section>
+                    <form action="/" method="post">
+                        <fieldset id="info-section">
+                            <legend>
+                                <h3>Your info</h3>
+                            </legend>
+                            <div id="info-subsection">
+                                <div id="name-section">
+                                    <div class="form-group1">
+                                        <label for="firstname">Firstname: </label>
+                                        <input type="text" id="firstname" name="firstname">
+                                    </div><!-- end form-group -->
+
+                                    <div class="form-group2">
+                                        <label for="lastname">Lastname: </label>
+                                        <input type="text" id="lastname" name="lastname">
+                                    </div>
+                                </div>
+
+                                <div id="contact-section">
+                                    <div class="form-group3">
+                                        <label for="email">Email: </label>
+                                        <input type="email" id="email" name="email">
+                                    </div><!-- end form-group -->
+
+                                    <div class="form-group4">
+                                        <label for="phone">Phone: </label>
+                                        <input type="phone" id="phone" name="phone">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                        <fieldset>
+                            <legend>
+                                <h3>Reservation type</h3>
+                            </legend>
+                            <div class="form-group">
+                                <input type="radio" id="veg" name="veg">
+                                <label for="del">Self Pickup</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" id="veg" name="veg">
+                                <label for="del">Book a table</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>
+                                <h3>Any allergies?</h3>
+                            </legend>
+                            <div class="form-group reservation">
+                                <div class="form-row reservation-type">
+                                    <input type="checkbox" id="del" name="del">
+                                    <label for="del">Gluten</label>
+                                </div>
+
+                                <div class="form-row reservation-type">
+                                    <input type="checkbox" id="pick" name="pick">
+                                    <label for="pick">Lactose</label>
+
+                                </div>
+
+                                <div class="form-row reservation-type">
+                                    <input type="checkbox" id="res" name="res">
+                                    <label for="res">Egg</label>
+                                </div>
+                                <div class="form-row reservation-type">
+                                    <label for="other-allergies">Other allergies: </label>
+                                    <input type="text" id="allergy" name="allergy">
+                                </div>
+
+                            </div><!-- end form-group -->
+                        </fieldset>
+
+
+                        <fieldset>
+                            <legend>
+                                <h3>Arriving at...</h3>
+                            </legend>
+                            <div class="date-time-section">
+                                <div class="date-time">
+                                    <h3>Date</h3>
+                                    <div class="form-row month">
+                                        <label for="month">Month: </label>
+                                        <select name="month" id="month">
+                                            <option value="January">January</option>
+                                            <option value="February">February</option>
+                                            <option value="March">March</option>
+                                            <option value="April">April</option>
+                                            <option value="May">May</option>
+                                            <option value="June">June</option>
+                                            <option value="July">July</option>
+                                            <option value="August">August</option>
+                                            <option value="September">September</option>
+                                            <option value="October">October</option>
+                                            <option value="November">November</option>
+                                            <option value="December">December</option>
+                                        </select>
+                                    </div><!-- end form-row -->
+                                    <div class="form-row day">
+                                        <label for="day">Day: </label>
+                                        <select name="day" id="day">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                    </div><!-- end form-row -->
+                                    <div class="form-row year">
+                                        <label for="year">Year: </label>
+                                        <select name="year" id="year">
+                                            <option value="2019">2019</option>
+                                            <option value="2020">2020</option>
+                                        </select>
+                                    </div>
+                                </div><!-- end form-group -->
+                                <div class="form-group time-group">
+                                    <h3>Time</h3>
+                                    <div class="form-row hour">
+                                        <label for="hour">Hour: </label>
+                                        <select name="hour" id="hour">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                    </div><!-- end form-row -->
+                                    <div class="form-row minute">
+                                        <label for="minute">Minute: </label>
+                                        <select name="minute" id="minute">
+                                            <option value="0">:00</option>
+                                            <option value="15">:15</option>
+                                            <option value="30">:30</option>
+                                            <option value="45">:45</option>
+                                        </select>
+                                    </div><!-- end form-row -->
+                                    <div class="form-row am-pm">
+                                        <label for="am-pm">AM or PM: </label>
+                                        <select name="am-pm" id="am-pm">
+                                            <option value="AM">AM</option>
+                                            <option value="PM">PM</option>
+                                        </select>
+                                    </div>
+                                </div><!-- end form-group -->
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>
+                                <h3>Comments</h3>
+                            </legend>
+                            <div class="form">
+                                <label for="comments">Please write down comments if you have any request:</label>
+                                <textarea name="comments" id="comments" placeholder="Anything you would like to inform us before your amazing dining experience..."></textarea>
+                        </fieldset>
+
+                        <div class="form-group submit-group">
+                            <div class="submit">
+                                <input type="submit" value="Submit" id="submit-button">
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+
+            </div>
+        </main>
+
+        <footer>
+            <p> © 2020 Coco's. All rights reserved. </p>
+        </footer>
+    </div>
+    <!--end of wrapper-->
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

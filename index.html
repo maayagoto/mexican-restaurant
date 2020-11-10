@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177287861-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177287861-1');
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mexican Restaurant!!!!!!</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="index.html"
+          ><img src="images/coco-logo.png" alt="coco-logo" id="coco-logo-img" />
+        </a>
+
+        <div class="nav-desktop">
+          <a href="about.html"> About</a>
+          <a href="menu.html"> Menu</a>
+          <a href="location.html"> Location</a>
+          <a href="reservation.html">Reservation</a>
+        </div>
+
+        <a href="#menu" class="hamburger" id="burger">
+          <span class="hamburger-icon">&#9776;</span>
+          <span class="hamburger-text">Menu</span>
+        </a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="about.html"> About Us</a></li>
+          <li><a href="menu.html"> Menu</a></li>
+          <li><a href="location.html"> Location</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <div id="bannerImage">
+          <img src="images/trial1.jpg" id="bannerimage" />
+          <button class="btn"><a href="reservations.html">Reserve Now!</a></button>
+        </div>
+
+        <div id="RBSlideshow">
+          <ul>
+            <li><img src="images/trial1.jpg" /></li>
+            <li><img src="images/trial2.jpg" /></li>
+            <li><img src="images/trial3.jpg" /></li>
+          </ul>
+        </div>
+
+        <div id="slideshow">
+          <div id="slides">
+            <div id="prevSlide">
+              <p></p>
+            </div>
+            <div id="currentSlide">
+              <p></p>
+            </div>
+            <div id="nextSlide">
+              <p></p>
+            </div>
+            
+          </div>
+          <button class="btn" id="reservelink"><a href="reservation.html">Reserve Now!</a></button>
+        </div>
+
+
+
+        <!--end top section-->
+
+        <div class="description">
+          <h1>Coco's Mexican Restaurant</h1>
+          <p>
+            Coco's elevates authentic Mexican cuisine with our own spin on
+            classic dishes like Pastor Burritos, Fried Guacamole and even Vegan
+            Specials like our delicious Mexican lentil Soup.
+          </p>
+
+          <p>Rated 5 star on yelp across 3,000 total reviews!</p>
+          <img src="images/yelpimage.png" id="yelp" />
+        </div>
+      </main>
+
+      <footer>
+        <p>© 2020 Coco's. All rights reserved.</p>
+        
+      </footer>
+    </div>
+    <!--end of wrapper-->
+    <script src="scripts/jq/jquery.min.js"></script>
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/RBSlideshow.js"></script>
+  </body>
+</html>

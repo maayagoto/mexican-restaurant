@@ -1,0 +1,40 @@
+//Mixins
+
+//MC
+//Center an element horizontally using
+//margin auto..
+@mixin mc($isImg: false, $t:0, $b: 0) {
+    margin: {
+       left: auto;
+       right: auto;
+       top: $t;
+       bottom: $b;
+    }
+    @if($isImg == true){
+        display: block;
+    }
+}
+
+//Flatten
+//Removes margins and padding and list styles
+@mixin flatten($isList:false, $isText:false, $padding:false){
+    margin: 0;
+    @if($padding == true){
+        $padding: 0
+    }
+    @if($isText == true){
+        line-height: 1;
+    }
+    @if($isList == true){
+       list-style: none;
+       padding: 0;
+    }
+}
+
+//Media Query Mixin
+@mixin mq($w){
+    @media (min-width: $w){
+        @content;
+    }
+
+}

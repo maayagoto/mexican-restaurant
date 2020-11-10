@@ -1,0 +1,24 @@
+//Body
+
+@use "variables" as *;
+
+
+
+body {background-color: $bgColorBody;
+padding: 0;}
+
+.description{
+    color: $textColorDark;
+    margin: 0 auto;
+    padding: 0;
+    background-color: white;
+    display: block;
+    width: 100%;
+
+}
+
+
+
+
+
+

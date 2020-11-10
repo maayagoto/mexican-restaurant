@@ -1,0 +1,180 @@
+/* RBSlideshow by Renato Bannò */
+
+body {
+
+	margin: 0px;
+
+}
+#RBSlideshow, #slideshow .btn{
+
+	display: none;
+
+}
+
+main ul{
+	display: none;
+}
+
+#bannerImage {
+	position: relative;
+	width: 100%;
+	max-width: 800px;
+}
+#bannerImage img {
+	width: 100%;
+	height: auto;
+}
+
+#bannerImage .btn {  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #ce1127e8;
+    color: white;
+    font-size: 16px;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center; 
+}
+.btn a {
+	text-decoration: none;
+	color: white;
+    margin: 0 auto;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 14px;
+    font-weight: bold;
+    
+
+}
+
+@media (min-width:700px) {
+
+#bannerImage{display: none;}
+#slideshow .btn {
+	display: block;
+}
+
+#slideshow {
+	position: relative;
+	width: 100%;
+}
+
+
+#slideshow .btn {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #ce1127e8;
+    color: white;
+    font-size: 16px;
+    padding: 17px 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+	text-align: center; 
+	transition: all 0.4s ease 0s;
+}
+
+#slideshow .btn:hover {
+	color: #ffffff !important;
+	background: #f6b93b;
+	border-color: #f6b93b !important;
+	transition: all 0.4s ease 0s;
+}
+
+
+.btn a {
+	text-decoration: none;
+	color: white;
+    margin: 0 auto;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 17px;
+    font-weight: bold;
+    
+
+}
+
+#slideshow {
+
+	width: 100%;
+	height: 80vh;
+	position: relative;
+	overflow: hidden;
+}
+
+#slides {
+
+	width: 300vw;
+	position: absolute;
+	left: -100vw;
+
+}
+
+#slides div {
+
+	width: 100vw;
+	height: 100vh;
+	background: center, no-repeat;
+	background-size: cover;
+	display: table-cell;
+
+}
+
+#slides div p {
+
+	max-width: 500px;
+	font-family: 'Avenir', sans-serif;
+	font-size: 40px;
+	font-weight: 200;
+	color: white;
+	text-shadow: 0px 0px 7px #54545F;
+	position: relative;
+	top: 40%;
+	margin: auto;
+	padding-right: 20%;
+
+}
+
+#bullets {
+
+	position: absolute;
+	bottom: 0px;
+	left: 0%;
+	right: 0%;
+	height: 40px;
+	text-align: center;
+
+}
+
+#bullets ul {
+
+	list-style-type: none;
+	padding: 0px;
+	display: inline-block;
+
+}
+
+#bullets ul li {
+
+	float: left;
+	width: 10px;
+	height: 10px;
+	border-style: double;
+	border-radius: 10px;
+	border-color: grey;
+	border-width: 1px;
+	margin: 5px;
+
+}
+
+
+}

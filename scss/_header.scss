@@ -1,0 +1,75 @@
+//Header
+
+@use 'variables' as *;
+@use 'mixins' as *; 
+
+header {
+    padding: 20px 10px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: white;
+    
+} 
+
+header img{
+    max-width: 70%;
+    
+}
+
+ .hamburger-icon{
+    font-size: 2.5em;
+    margin-right: 15px;
+}
+
+.hamburger-text {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+
+}
+.hamburger {
+    text-decoration: none;
+    color: #006341;
+}
+.nav-desktop {
+    display:none;
+
+}
+
+
+
+@media (min-width: $tablet) {
+    .nav-desktop {
+        display:flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: space-evenly;
+        
+        
+    
+    }
+    header img {
+        width: 100%;
+    }
+    
+    .nav-desktop a{
+    color:#006341;
+    text-decoration: none;
+    font-family: 'Fugaz One', cursive;
+    font-size: 25px;
+    margin-right: 10px;
+    }
+    
+
+
+
+    .hamburger-icon {display: none;}
+
+}
+

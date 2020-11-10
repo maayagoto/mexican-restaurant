@@ -1,0 +1,42 @@
+
+//Main Site Variables
+
+//Colors
+$brandColor: #CE1126;
+//Variations of brand color
+//use Sass color functions
+
+
+$brandColorLight:lighten($brandColor,20);
+$brandColorDark:darken($brandColor, 20);
+
+
+//BG colors
+$bgColorWrapper:rgb(255, 255, 255);
+$bgColorBody: #D8C4AE;
+
+//Text Colors
+$textColorLight: white;
+$textColorDark: black;
+
+//Fonts
+$fontBody: Arial;
+$fontHeading: Georgia;
+//Layout Variables
+$lineHeight:1.4;
+//Gutters
+$pad: 30px;
+$gutter: 2; 
+
+//Hover State Variable
+$hover: '&:hover, &:focus, &:active';
+
+//Utility function for coverting PC to EMs
+@function em($px, $bc: 16){
+    @return #{$px/$bc}em;
+}
+
+//media queries//
+//mobile-small:320px; 
+$tablet: 700px;
+$desktop:1200px;
